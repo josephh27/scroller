@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.panel {
+    display: flex;
+    height: 800px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel.turquoise {
+    background: turquoise;
+}
+
+.panel.blue {
+    background: blue;
+}
+
+.panel.bordeaux {
+    background: #7F1734;
+}
+
+.panel.green {
+    background: green;
+}
+
+/* Scroll on reveal effects */
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+
+.reveal.section-active {
+    opacity: 1;
+}   
+
+.section-active {
+    animation: fade-in 1s ease-in;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+      }
+    100% {
+        opacity: 1;
+    }
+}
