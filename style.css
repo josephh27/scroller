@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
 .panel {
     display: flex;
-    height: 800px;
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding: 200px 20px;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
 }
 
 .panel.turquoise {
@@ -40,7 +43,7 @@
 }   
 
 .section-active {
-    animation: fade-in 1s ease-in;
+    animation: fade-in 1.5s ease-in;
 }
 
 @keyframes fade-in {
@@ -50,4 +53,27 @@
     100% {
         opacity: 1;
     }
+}
+/* End of reveal on scroll aniamtion */
+
+#first-panel-bgvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#first-panel div:first-child, #first-panel div:nth-child(2) {
+    width: 50%;
+}
+
+#first-panel h1 {
+    font-size: 3.5rem;
+}
+
+.first-panel-texts {
+    text-align: right;
 }
