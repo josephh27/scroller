@@ -77,3 +77,16 @@
 .first-panel-texts {
     text-align: right;
 }
+
+#second-panel {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.second-panel-texts {
+    width: 80%;
+}
+
+.second-panel-texts p {
+    font-size: 2rem;
+}
